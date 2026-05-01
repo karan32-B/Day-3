@@ -6,7 +6,8 @@ using namespace std;
 
 // --- Base Class ---
 class Item {
-protected:
+// 
+private:
     int id;
     string title;
     bool isIssued;
@@ -82,9 +83,9 @@ int main() {
     // Vector of pointers to handle Polymorphism
     vector<Item*> library;
 
-    library.push_back(new Book(101, "The Great Gatsby", "F. Scott Fitzgerald"));
+    library.push_back(new Book(101,"Diwar mein ek khidki rehti thi", "vinod kumar sukla"));
     library.push_back(new Magazine(201, "National Geographic", 542));
-    library.push_back(new Book(102, "1984", "George Orwell"));
+    library.push_back(new Book(102, "Musaafir", "Premchand"));
 
     cout << "--- Library Inventory ---\n";
     int availableCount = 0;
