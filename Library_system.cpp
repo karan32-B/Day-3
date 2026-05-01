@@ -44,7 +44,7 @@ public:
     // Simple fine calculation logic
     void calculateFine(int days) {
         double finePerDay = 2.0; 
-        cout << " Fine incurred: $" << (days * finePerDay);
+        cout << " Fine : $" << (days * finePerDay);
     }
 
     bool getStatus() const { return isIssued; }
